@@ -1,0 +1,16 @@
+body {
+  background-color: #eaf6f6;
+}
+hr {
+  border-style: none;
+  border-top: 8px dotted  rgb(35, 97, 97);
+  width: 10%;
+}
+h1,h2,h3,h4{
+    color: rgb(35, 97, 97);
+}
+img {
+    border: 4px solid rgb(35, 97, 97);
+    border-radius: 50%; 
+    width: 15rem;
+}
