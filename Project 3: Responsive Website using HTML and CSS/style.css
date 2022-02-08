@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--clr-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+:root {
+  --clr-pri: #ff4c68;
+  --clr-sec: #ef8172;
+  --clr-text: #fff;
+  --clr-dark: #23272b;
+  --clr-grey: rgba(255, 255, 255, 0.5);
+  --ff-pri: "Outfit", sans-serif;
+}
+header {
+  min-width: 99.5vw;
+  min-height: 100vh;
+  background: var(--clr-pri);
+}
+nav {
+  display: flex;
+  color: var(--clr-grey);
+}
+.nav-pc {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 16vw;
+  top: 4vw;
+  font-size: 1.5vw;
+}
+.nav-item {
+  padding: 2vw;
+}
+nav h1 {
+  color: var(--clr-text);
+  padding: 4vw 16vw 2vw;
+  font-size: 3vw;
+}
+.left {
+  float: left;
+  padding-left: 16vw;
+  padding-top: 4vw;
+}
+.right{
+    max-height: 50%;
+    overflow: hidden;
+}
+.title {
+  color: var(--clr-text);
+  width: 40%;
+  font-size: 4vw;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.dog {
+  position: absolute;
+  right: 25%;
+  bottom: -15%;
+  transform: rotate(25deg);
+  width: 20%;
+  clear: left;
+}
+.btns{
+    display: flex;
+    margin: 2vw;
+    font-size: 1.25rem;
+}
+.button-apple1{    
+    border: 1px solid var(--clr-dark);
+    margin-right: 2vw;
+    padding: 0.5rem 1rem;  
+}
+.button-apple2{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;  
+}
