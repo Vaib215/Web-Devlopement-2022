@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +9,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background: var(--clr-text);
+  font-family: "Roboto", sans-serif;
 }
 :root {
   --clr-pri: #ff4c68;
@@ -17,15 +19,18 @@ body {
   --clr-grey: rgba(255, 255, 255, 0.5);
   --ff-pri: "Outfit", sans-serif;
 }
+div.container {
+  z-index: -2;
+}
 header {
+  position: relative;
+
   background: var(--clr-pri);
   width: 100%;
-  min-height: 100vh;
-  padding: 4em 12em;
+  height: 95vh;
+  padding: 3em 13em;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  overflow: hidden;
 }
 
 /* nav styling */
@@ -37,11 +42,11 @@ nav {
   flex-direction: row;
   align-items: center;
 
-  color : var(--clr-text);
+  color: var(--clr-text);
   /* background: rgba(255, 0, 0, 0.335); */
 }
 nav h1 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 /* nav item for desktop */
@@ -57,11 +62,12 @@ nav div.nav-pc {
 nav div.nav-pc div.nav-item {
   color: var(--clr-grey);
 
-  font-size: 1.5em;
-  margin-left: 1em;
+  font-size: 1.2em;
+  margin-left: 1.5em;
 }
 nav div.nav-pc div.nav-item:hover {
-  color : var(--clr-text);
+  color: var(--clr-text);
+  cursor: pointer;
 }
 nav div.ham {
   width: 3.5em;
@@ -75,6 +81,7 @@ nav div.ham {
   border-radius: 2px;
 
   margin-left: auto;
+  cursor: pointer;
 }
 nav div.ham div.ham-bar {
   width: 100%;
@@ -83,25 +90,109 @@ nav div.ham div.ham-bar {
   background: var(--clr-text);
   border-radius: 5px;
 }
-@media (max-width:999px) {
+@media (max-width: 999px) {
+  header {
+    padding: 3em 8em;
+  }
   nav div.nav-pc {
     display: none;
   }
 }
-@media (min-width:999px) {
+@media (min-width: 999px) {
   nav div.ham {
     display: none;
   }
 }
 
 div.left {
-  background: rgba(0, 128, 0, 0.212);
   width: 50%;
+  margin-top: 5em;
 }
 div.left h2 {
   font-size: 4em;
   color: var(--clr-text);
+  font-weight: 500;
 }
-img {
-  width: 0;
+div.left .btns {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+}
+div.left .btns .button-apple1 {
+  padding: 0.5em 1em;
+  font-size: 1.4em;
+  margin-bottom: 2em;
+
+  background: var(--clr-dark);
+  color: var(--clr-text);
+
+  border: 2px solid var(--clr-dark);
+  border-radius: 10px;
+}
+div.left .btns .button-apple2 {
+  padding: 0.5em 1em;
+  font-size: 1.4em;
+  margin-left: 1em;
+  margin-bottom: 2em;
+
+  border: 2px solid var(--clr-text);
+  border-radius: 10px;
+
+  color: var(--clr-text);
+}
+div.left .btns .button-apple1:hover {
+  cursor: pointer;
+  background: black;
+}
+div.left .btns .button-apple2:hover {
+  cursor: pointer;
+  background: var(--clr-text);
+  color: var(--clr-dark);
+}
+header img {
+  position: absolute;
+  bottom: -14%;
+  left: 55%;
+
+  width: 20%;
+  transform: rotate(25deg);
+}
+main {
+  background: white;
+}
+@media (max-width: 999px) {
+  header {
+    overflow: visible;
+    height: fit-content;
+  }
+  div.left h2 {
+    font-size: 3em;
+    line-height: 1.5;
+  }
+  header img {
+    transform: rotate(0);
+    bottom: 10%;
+  }
+}
+@media (max-width: 768px) {
+  div.left {
+    width: 100%;
+  }
+  header img {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    padding: 2em 2em;
+  }
+  div.left h2 {
+    font-size: 2.5em;
+  }
+  div.left .btns .button-apple1,div.left .btns .button-apple2 {
+    font-size: 1.2em;
+  }
 }
