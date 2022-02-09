@@ -24,7 +24,6 @@ div.container {
 }
 
 .features{
-    background-color: #c71700;
     height: 85vh;
     padding: 10%;
     position: relative;
@@ -41,16 +40,27 @@ div.container {
     line-height: 2;
     font-weight: 900;
     font-family: var(--ff-pri);
+    padding: 1rem;
 }
 .feature-item p{
     align-self: center;
     width: 80%;
+    color: var(--clr-grey);
+    font-weight: normal;
 }
 .icons{
     font-size:8rem;
-    margin-bottom: 1rem;
     color: var(--clr-sec);
+    height: 8rem;
+    margin-bottom: 1rem;
 }
 .icons:hover{
     color: var(--clr-pri)
+}
+.testimonials{
+    background-color: var(--clr-dark);
+    height: 100vh;
+    padding: 10%;
+    position: relative;
+    text-align: center;
 }
