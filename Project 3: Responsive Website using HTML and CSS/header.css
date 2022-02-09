@@ -27,7 +27,7 @@ header {
 
   background: var(--clr-pri);
   width: 100%;
-  max-height: 100vh;
+  height: 100vh;
   padding: 3em 13em;
 
   overflow: hidden;
