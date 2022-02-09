@@ -27,7 +27,7 @@ header {
 
   background: var(--clr-pri);
   width: 100%;
-  height: 100vh;
+  max-height: 100vh;
   padding: 3em 13em;
 
   overflow: hidden;
@@ -130,7 +130,7 @@ div.left .btns .button-apple1 {
   border-radius: 10px;
 }
 div.left .btns .button-apple2 {
-  padding: 0.4em 0.8em 0.1em;
+  padding: 0.4em 0.8em;
   font-size: 1.4em;
   margin-left: 1em;
   margin-bottom: 2em;
@@ -182,7 +182,7 @@ main {
     font-size: 3em;
     line-height: 1.5;
   }
-  header img {
+  header .dog {
     transform: rotate(0);
     bottom: 10%;
   }
@@ -191,7 +191,7 @@ main {
   div.left {
     width: 100%;
   }
-  header img {
+  header .dog {
     position: relative;
     bottom: 0;
     left: 0;
@@ -202,8 +202,18 @@ main {
   header {
     padding: 2em 2em;
   }
+  header .dog {
+    position: relative;
+    left: 25%;
+    margin-bottom: -8%;;
+    width: 50%;
+  }
   div.left h2 {
     font-size: 2.5em;
+  }
+  .btns{
+    display: flex;
+    flex-direction: column;
   }
   div.left .btns .button-apple1,div.left .btns .button-apple2 {
     font-size: 1.2em;

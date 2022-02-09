@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  width: 100%;
-  min-height: 100vh;
-  background: var(--clr-text);
-  font-family: "Roboto", sans-serif;
-}
 :root {
   --clr-pri: #ff4c68;
   --clr-sec: #ef8172;
@@ -19,10 +7,6 @@ body {
   --clr-grey: rgba(255, 255, 255, 0.5);
   --ff-pri: "Outfit", sans-serif;
 }
-div.container {
-  z-index: -2;
-}
-
 .features{
     height: 85vh;
     padding: 10%;
@@ -45,7 +29,7 @@ div.container {
 .feature-item p{
     align-self: center;
     width: 80%;
-    color: var(--clr-grey);
+    color:#8f8f8f;
     font-weight: normal;
 }
 .icons{
@@ -63,4 +47,13 @@ div.container {
     padding: 10%;
     position: relative;
     text-align: center;
+}
+@media (max-width: 990px){
+    .row{
+        flex-direction: column;
+        align-content: center;
+    }
+    .feature-item{
+        width: 100%;
+    }
 }
