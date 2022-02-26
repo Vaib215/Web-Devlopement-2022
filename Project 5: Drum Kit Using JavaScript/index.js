@@ -26,16 +26,22 @@ function sound(key){
             break;
         case 'a':
             n=1
+            break;
         case 's':
             n=2
+            break;
         case 'd':
             n=3
+            break;
         case 'j':
             n=4
+            break;
         case 'k':
             n=5
+            break;
         case 'l':
             n=6
+            break;
         default:
             break;
     }
